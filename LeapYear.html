@@ -1,0 +1,21 @@
+<html>
+    <p>
+        Input -> Year, ensure it is a 4 digit number.
+        Logic -> Determine if it is a Leap Year.
+        Output -> Print the year is a Leap Year or not
+    </p>
+    <h2>Given year <span id="userInputID"></span></h2>
+    <h2 id="resultID"> </h2>
+    <script>
+        const givenYear = prompt('Please enter a any year');
+        document.getElementById('userInputID').innerHTML = givenYear;
+        if(leapyear(givenYear))
+            document.getElementById('resultID').innerHTML = givenYear+ ' is a leap year';
+        else
+            document.getElementById('resultID').innerHTML = givenYear+ ' is  not a leap year';
+        function leapyear(givenYear)
+        {
+            return (givenYear % 100 === 0) ? (givenYear % 400 === 0) : (givenYear % 4 === 0);
+        }
+    </script>
+</html>
