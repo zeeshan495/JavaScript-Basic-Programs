@@ -1,18 +1,13 @@
 
 <html>
-    <h2>the given value of N <span id = "input"></span></h2>
-    <h2>the Harmonic value is <span id = "output"></span></h2>
-    <script>
-        var userInsput = prompt('Please enter a the Harmonic Value N');
-        document.getElementById('input').innerHTML = userInsput;
-        var result = HarmonicValue(userInsput);
-        document.getElementById('output').innerHTML = result;
-        function HarmonicValue(valueOfN){
-            var result = 0;
-            for(var index = 1; index <= valueOfN; index++){
-                result += 1/index;
-            }
-            return result;
-        }
-    </script>
+    <head>
+        <script src = "I:\JavaScript-Programs\Basic Programs\Harmonic.js"></script>
+    </head>
+    <body>
+        <label for="inputText">Please enter a nth value to get harmonic value</label>
+        <input type = "text" id = "inputText"/>
+        <button id="inputButton" onclick="HarmonicValue(document.getElementById('inputText').value)">Submit</button>
+        <h2>the given value of N <span id = "input"></span></h2>
+        <h2>the Harmonic value is <span id = "output"></span></h2>
+    </body>   
 </html>
