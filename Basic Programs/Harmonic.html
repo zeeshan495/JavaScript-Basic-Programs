@@ -5,7 +5,7 @@
     </head>
     <body>
         <label for="inputText">Please enter a nth value to get harmonic value</label>
-        <input type = "text" id = "inputText"/>
+        <input type = "text" id = "inputText" onkeypress="inputValidator(event)"/>
         <button id="inputButton" onclick="HarmonicValue(document.getElementById('inputText').value)">Submit</button>
         <h2>the given value of N <span id = "input"></span></h2>
         <h2>the Harmonic value is <span id = "output"></span></h2>

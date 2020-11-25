@@ -4,8 +4,8 @@
 </head>
 <body>
     <label for="input">Number of times to flip</label>
-    <input type = "text" id = "input"/>
-    <button id = "submit" onclick="flipCoin(document.getElementById('input').value)">Submit</button>
+    <input type = "text" id = "input" onkeypress="inputValidator(event)"/>
+    <button id = "submit" onclick="flipCoin()">Submit</button>
     <h2>Number of times to flip <span id = 'Giveninput'></span></h2>
     <h2 id = 'heads'> </h2>
     <h2 id = 'tails'> </h2>   
